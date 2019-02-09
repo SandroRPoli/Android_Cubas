@@ -17,13 +17,12 @@ import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.DatePicker
-import android.widget.EditText
-import android.widget.ImageView
 import kotlinx.android.synthetic.main.activity_contato.*
-import org.jetbrains.anko.find
+
 import java.io.*
 import java.text.SimpleDateFormat
 import java.util.*
+
 
 class ContatoActivity : AppCompatActivity() {
 
@@ -77,7 +76,7 @@ class ContatoActivity : AppCompatActivity() {
             contato?.email = txtEmail?.text.toString()
             contato?.site = txtSite?.text.toString()
 
-            if(contato?.id!!.equals(0)){
+            if(contato?.id == 0L){
                 ContatoRepository(this).create(contato!!)
             }else{
                 ContatoRepository(this).update(contato!!)
@@ -202,5 +201,5 @@ class ContatoActivity : AppCompatActivity() {
         imgContato.setImageBitmap(bitmap)
     }
 
-    }
+}
 
