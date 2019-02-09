@@ -76,6 +76,8 @@ class ContatoActivity : AppCompatActivity() {
 
     }
 
+
+    
     override fun onResume() {
         super.onResume()
         val intent = intent
