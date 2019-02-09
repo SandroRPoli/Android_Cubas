@@ -75,8 +75,6 @@ class ContatoActivity : AppCompatActivity() {
 
 
     }
-
-
     
     override fun onResume() {
         super.onResume()
