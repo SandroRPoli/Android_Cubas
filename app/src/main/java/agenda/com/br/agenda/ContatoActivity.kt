@@ -184,6 +184,7 @@ class ContatoActivity : AppCompatActivity() {
 
         // Save a file: path for use with ACTION_VIEW intents
         mCurrentPhotoPath = image.getAbsolutePath()
+        contato?.foto = mCurrentPhotoPath
         return image
     }
 
