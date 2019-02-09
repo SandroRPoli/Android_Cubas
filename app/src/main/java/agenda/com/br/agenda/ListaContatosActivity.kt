@@ -114,6 +114,8 @@ class ListaContatosActivity : AppCompatActivity() {
         adapter.notifyDataSetChanged()
     }
 
+
+
     override fun onResume() {
         super.onResume()
         contatos = ContatoRepository(this).findAll()
